@@ -1,0 +1,18 @@
+<div id="login-container">
+  <img src="../../../assets/imagens/Logo.svg" alt="Logo medicar" id="logo">
+  <h3>Criar conta</h3>
+  <form>
+    <div id="imputs">
+      <input type="text" placeholder="nome">
+      <input type="text" placeholder="email">
+      <button type="button"><img src="../../../assets/imagens/olho.svg" alt="mostra senha" class="olho"></button>
+      <input type="password" placeholder="Senha">
+      <button type="button" id="confiSenha"><img src="../../../assets/imagens/olho.svg" alt="mostra senha" class="olho"></button>
+      <input type="password" placeholder="Confirmar Senha">
+    </div>
+    <div id="butoes">
+      <a href="/login">Cancelar</a>
+      <button type='button' (click)="criarUsuario()">Confirmar</button>
+    </div>
+  </form>
+</div>

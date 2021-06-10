@@ -1,0 +1,33 @@
+<div id="table-container">
+  <div id="table-title">
+    <h1>Consulta Clinica</h1>
+    <button id="criarConsulta">
+      <i class="fa fa-plus"></i>
+      Nova Consulta
+    </button>
+  </div>
+
+  <div>
+    <table id="table">
+      <thead>
+        <tr>
+          <th scope="col">Especialidade</th>
+          <th scope="col">Profissional</th>
+          <th scope="col">Data</th>
+          <th scope="col">Hora</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let consulta of consultasDTO; index as i" [style.background]="(i + 1) % 2 == 0 ? '#F8F8F8' : 'white'">
+          <td>{{consulta.especialidade}}</td>
+          <td>{{consulta.profissional}}</td>
+          <td>{{consulta.data}}</td>
+          <td>{{consulta.hora}}</td>
+          <td *ngIf="consulta" ><button id="deletarConsulta" (click)="deletarConsulta(consulta.idConsulta)">x  Desmarcar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

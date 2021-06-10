@@ -1,0 +1,18 @@
+#header-container{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+#header-container span{
+  color: #A8A8A8;
+}
+
+#header-container a{
+  text-decoration: none;
+  color: #49B4BB;
+  margin-left: 30px;
+}
+
+
